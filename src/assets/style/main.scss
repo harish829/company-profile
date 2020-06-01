@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+$dark: #191B22;
+$darkgray: #2E323C;
+$lightgray: #f4f4f4;
+$lightergray: #F0E7E2;
+$grey: #ededed;
+$blue: #43AAC7;
+$orange: #FE8137;
+$danger: #f44336;
+$lineBg: #e0e0e0;
+$primary: $blue;
+$tabs-link-color: #7a7a7a;
+$tabs-link-active-color: #000;
+$input-border-color: #979797;
+$select: #adadad;
+$transparent: transparent;
+$light: #ecf3f7;
+$fontcolor: #23262F;
+// default padding and margin
+$bottomshadow: 0 8px 6px -10px #ccc;
+$tabs-border-bottom-width: 2px;
+$padding: 0rem;
+$padding-lr: 1.5rem;
+$margin: 5px;
+$body-size: 0.8125rem;
+$tab-size: 1rem;
+$navbar-height: 4rem;
+$column-gap: 15px;
+$input-radius: 0;
+$input-shadow: none;
+$input-background-color: $transparent;
+$input-color: $fontcolor;
+$input-color: $fontcolor;
+$menu-item-color: $lightergray;
+$menu-item-hover-color: $lightergray;
+$menu-item-hover-background-color: $transparent;
+$menu-item-active-color: $lightergray;
+$menu-item-active-background-color: $transparent;
+$navbar-item-color: $lightergray;
+$navbar-item-hover-background-color: $transparent;
+
+
+@import "~bulma/bulma";
+@import "~buefy/dist/buefy.css";
+@import "~bulma-divider";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+
+html, body {
+  font-family: "Open Sans", "Roboto", sans-serif !important;
+  color: $fontcolor;
+  background-color: $dark;
+}
+
+.side-menu-container aside.menu {
+  background-color: $dark;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: $padding-lr;
+  overflow: auto;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  color: $lightgray;
+}
+.header {
+  background-color: $darkgray;
+  font-size: $tab-size;
+  font-weight: bold;
+  color: $lightgray;
+  padding: $padding-lr;
+  .sub-header-navbar {
+    height: $navbar-height;
+  }
+  .is-logo {
+    width: 270px;
+    height: unset;
+  }
+}
+.navbar {
+  background-color: $transparent;
+}
+.is-centered {
+  margin: 0 auto;
+}
+.has-background-grey {
+  background-color: $grey;
+}
+.input {
+  border: $padding;
+  border-bottom:1px solid $dark;
+}
+input:focus, textarea:focus {
+  outline: none !important;
+}
+.input, .is-radiusless, .mfact-active-color, .taginput-container, input, textarea{
+  border-radius: $padding;
+}
+// .content {
+//   padding: $padding-lr - .5;
+// }
+.is-narrow .fa-1x {
+  font-size: 1.5em !important;
+}
+.media + .media {
+  border-top: 0;
+}
+.content figure {
+  margin-left: 0;
+}
